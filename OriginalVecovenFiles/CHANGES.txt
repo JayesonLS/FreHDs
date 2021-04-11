@@ -1,0 +1,17 @@
+2.14 - latest version (Thu Jan 23 17:07:06 2014)
++ all latest enhancements
++ support for Kaypro
+
+2.02 - bug fixes (Mon May 20 10:07:52 2013)
++ fixed a bug which prevented "fast seek" from being active. (big
+  performance boost)
++ PCB: BS170 "polarity" may be wrong on the PCB silk screen. Double
+  check with the datasheets of our BS170, but chances are that you
+  need to mount it opposed to the silk screen drawing.
++ updated vhdutl/cmd
+
+2.01 - internal release, not distributed
+
+2.00 - initial release
+
+

@@ -13,6 +13,8 @@ OriginalFreHDKiCad
 Frederic Vecoven's original schematic transcribed into KiCard to 
 use as a starting point for derivative projects. 
 
+[Latest schematic PDF](OriginalFreHDKiCad/OriginalFreHDKiCad.pdf)
+
 A PCB layout has also been created using the original gerbers. 
 Note however that this was used for checking the correctness of the
 schematic and is not intended for production. Some of the footprints

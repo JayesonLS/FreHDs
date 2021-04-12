@@ -1038,7 +1038,7 @@ U 1 1 60861212
 P 3800 7000
 F 0 "J4" H 3718 6683 50  0000 C CNN
 F 1 "CON2" H 3718 6774 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Horizontal" H 3800 7000 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x01_P2.54mm_Vertical" H 3800 7000 50  0001 C CNN
 F 3 "~" H 3800 7000 50  0001 C CNN
 	1    3800 7000
 	-1   0    0    1   
@@ -1062,7 +1062,7 @@ U 1 1 608711DD
 P 4350 7150
 F 0 "C1" H 4465 7196 50  0000 L CNN
 F 1 "0.1uF" H 4465 7105 50  0000 L CNN
-F 2 "Fuse:Fuseholder_Blade_Mini_Keystone_3568" H 4388 7000 50  0001 C CNN
+F 2 "Capacitor_THT:C_Disc_D8.0mm_W2.5mm_P5.00mm" H 4388 7000 50  0001 C CNN
 F 3 "~" H 4350 7150 50  0001 C CNN
 	1    4350 7150
 	1    0    0    -1  
@@ -1291,13 +1291,6 @@ F 3 "" H 10150 6000 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	10050 5550 10150 5550
-Wire Wire Line
-	10150 5550 10150 5650
-Wire Wire Line
-	10050 5650 10150 5650
-Connection ~ 10150 5650
-Wire Wire Line
-	10150 5650 10150 6000
 $Comp
 L Device:R R1
 U 1 1 60934D05
@@ -1640,17 +1633,6 @@ Wire Wire Line
 Connection ~ 5150 5750
 Wire Wire Line
 	5150 5750 5050 5750
-$Comp
-L power:+3.3V #PWR0149
-U 1 1 60A57302
-P 5150 4650
-F 0 "#PWR0149" H 5150 4500 50  0001 C CNN
-F 1 "+3.3V" H 5165 4823 50  0000 C CNN
-F 2 "" H 5150 4650 50  0001 C CNN
-F 3 "" H 5150 4650 50  0001 C CNN
-	1    5150 4650
-	1    0    0    -1  
-$EndComp
 Text GLabel 5050 5750 0    50   Input ~ 0
 SPI_SDI
 Text Label 7950 5150 2    50   ~ 0
@@ -1782,4 +1764,18 @@ F 3 "~" H 6650 7150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 NoConn ~ 950  3200
+Wire Wire Line
+	10150 5550 10150 6000
+NoConn ~ 10050 5650
+$Comp
+L power:VCC #PWR?
+U 1 1 6088DA35
+P 5150 4650
+F 0 "#PWR?" H 5150 4500 50  0001 C CNN
+F 1 "VCC" H 5165 4823 50  0000 C CNN
+F 2 "" H 5150 4650 50  0001 C CNN
+F 3 "" H 5150 4650 50  0001 C CNN
+	1    5150 4650
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

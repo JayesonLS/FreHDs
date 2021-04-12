@@ -4,7 +4,7 @@ FreHDs
 OriginalVecovenFiles
 --------------------
 
-Unmodified copy of Frederic Vecoven's 2.14 file release for
+An unmodified copy of Frederic Vecoven's 2.14 file release for
 easy reference.
 
 OriginalFreHDKiCad
